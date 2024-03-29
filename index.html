@@ -4,8 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Login</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 <body>
+    <main>
+        <section id="login">
+           <div id="imagem">
+            <!-- Aqui vai a imagem na CSS-->
+           </div>
+           <div id="formulario">
+            <h1>Login</h1>
+            <p>Seja Bem vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.
+                <form action="login.php" method="post">
+                    E-mail: <input type="email" name="email" id="iemail" required >
+                    <br>
+                    Senha: <input type="password" name="senha" id="isenha" required> 
+                    <br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+
+                </form>
+            </p>
+
+           </div> 
+        </section>
+    </main>
     
 </body>
 </html>
