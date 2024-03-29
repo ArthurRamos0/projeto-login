@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
 </head>
@@ -15,15 +16,23 @@
            </div>
            <div id="formulario">
             <h1>Login</h1>
-            <p>Seja Bem vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.
-                <form action="login.php" method="post">
-                    E-mail: <input type="email" name="email" id="iemail" required >
-                    <br>
-                    Senha: <input type="password" name="senha" id="isenha" required> 
-                    <br>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpar">
 
+            <p>Seja Bem vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.
+
+                <form action="login.php" method="post" autocomplete="on">
+                    
+                    <div class="campo">
+                        <i class="material-symbols-outlined">person</i>
+                        <input type="email" name="login" id="ilogin" placeholder="Seu E-mail" required autocomplete="email" maxlength="40">
+                        <label for="ilogin">E-mail</label>
+                    </div> 
+                    <div class="campo">
+                        <i class="material-symbols-outlined">vpn_key</i>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua Senha" required autocomplete="current-password" minlength="8" max="20">
+                        <label for="isenha">Senha</label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html">Esqueci a senha <i class="material-symbols-outlined">mail</i></a>
                 </form>
             </p>
 
